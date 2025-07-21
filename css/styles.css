@@ -3,39 +3,138 @@ body {
 }
 
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
-
 .robot-container {
+  width: 600px;
+  height: 800px;
+  border: 5px solid;
+  background-color: black;
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .robot-face-shape {
+  height: 80%;
+  width: 80%;
+  border: 4px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 10;
+  background-image: url("https://picsum.photos/seed/picsum/200/300");
+  background-size: 100%;
+  background-position: center;
 }
 
 .robot-eye-left {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 10%;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .robot-eye-right {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  right: 10%;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .robot-ear-left {
+  width: 5rem;
+  height: 100px;
+  background: rgba(103, 50, 3, 0.822);
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  opacity: 0.5;
 }
 
 .robot-ear-right {
+  width: 5rem;
+  height: 100px;
+  background: rgba(103, 50, 3, 0.822);
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  opacity: 0.5;
 }
 
 .robot-nose {
-}
-
-.robot-nose:before {
-}
-
-.robot-nose:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid;
+  color: rgb(94, 56, 2);
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }
 
 .robot-teeth {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.robot-teeth > div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
 .robot-tooth {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 50px solid rgb(255, 247, 0);
+}
+
+.lower .robot-tooth {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 50px solid rgb(255, 247, 0);
+  border-top: 0;
 }
 
 .robot-hair-style {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.robot-hair-one {
+  width: 20px;
+  height: 60px;
+  background: rgb(70, 47, 5);
+}
+
+.robot-hair-two {
+  width: 20px;
+  height: 80px;
+  background: wheat;
+}
+
+.robot-hair-three {
+  width: 20px;
+  height: 100px;
+  background: rgb(111, 75, 7);
 }

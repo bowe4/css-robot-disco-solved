@@ -1,0 +1,80 @@
+.robot-nose {
+  transition: transform 0.5s ease-in-out;
+}
+
+.robot-nose:hover {
+  transform: rotate(90deg);
+}
+
+.robot-eye-left {
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.robot-eye-right {
+  animation: resize 3s ease-in-out infinite;
+}
+@keyframes resize {
+  0%,
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+}
+.robot-hair-style {
+  animation: moveUpDown 2s linear infinite;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  75% {
+    transform: translate(0, 20px);
+  }
+}
+.robot-ear-left,
+.robot-ear-right {
+  animation: changeColor 3s linear infinite;
+}
+@keyframes changeColor {
+  0%,
+  100% {
+    background: rgba(103, 50, 3, 0.822);
+  }
+  50% {
+    background: rgba(77, 48, 143, 0.822);
+  }
+}
+.robot-tooth {
+  animation: moveTooth 3s linear infinite;
+}
+@keyframes moveTooth {
+  0%,
+  100% {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  50% {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+}
